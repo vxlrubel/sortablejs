@@ -1,0 +1,46 @@
+:root{
+    --color-body: #2d3436;
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    color: var(--color-body);
+}
+.sortable-area{
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 0 25px;
+}
+.items{
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+.items:not(:last-child){
+    border-top: 1px solid var(--color-body);
+}
+.items:last-child{
+    border-top: 1px solid var(--color-body);
+    border-bottom: 1px solid var(--color-body);
+}
+.swap{
+    background-color: #7bed9f;
+}
+.handle{
+    display: inline-flex;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    padding: 10px;
+    cursor: move;
+}
+.handle img{
+    max-width: 100%;
+}
